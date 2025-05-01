@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffdd57;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    section h2 {
+      color: #007bff;
+    }
+    footer {
+      background-color: #222;
+      color: #ddd;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to abstrk Website</h1>
+    <nav>
+      <a href="#beranda njing" onclick="scrollToSection(event, 'beranda njing')">beranda njing</a>
+    </nav>
+  </header>
+  <main>
+    <section id="beranda njing">
+      <h2>beranda njing</h2>
+      <p>gw abstrk njing ngpain lu</p></p>
+    </section>
+    <section id="terserah lu dah">
+      <h2>terserah lu dah</h2>
+      <p>gw dah males ya.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>0812345678 awokawok</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Simple Website. All rights reserved.
+  </footer>
+  <script>
+    function scrollToSection(event, id) {
+      event.preventDefault();
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
